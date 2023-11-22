@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "this is a drawing app",
   "main": "index.js",
-  "scripts": {
-    "develop": "nodemon index.js",
-    "start": "node index.js"
-  },
   "author": "rainy",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +11,9 @@
     "random.dog.js": "^1.0.2",
     "superagent": "^3.8.2"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "develop": "nodemon index.mjs",
+    "start": "node index.mjs"
+  }
 }
