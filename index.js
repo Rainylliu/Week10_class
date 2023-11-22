@@ -1,7 +1,7 @@
 // Import the express library and assign it to a variable
 import express from 'express'
 
-const getRandomCat = require('random-cat-img');
+const randomDog = require('random.dog.js');
 // Create an instance of an express application 
 const app = express()
 
@@ -12,11 +12,12 @@ const port = process.env.PORT || 3001
 app.get('/', async (req, res) => {
   try {
     // Fetch a random cat image
-    const data = await getRandomCat();
-    const catImageUrl = data.message;
+    const randomDogApi = randomDog.api();
+    const dogData = await randomDogApi.getDog();
+    const dogImageUrl = dogData.url;
 
     // Send a response with the cat image URL
-    res.send(`<img src="${catImageUrl}" alt="Random Cat Image">`);
+    res.send(`<img src="${dogImageUrl}" alt="Random Dog Image">`);
   } catch (error) {
     // Handle errors
     console.error('Error fetching random cat image:', error);
