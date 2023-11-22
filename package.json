@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "this is a drawing app",
   "main": "index.js",
-  "scripts": {
-    "develop": "nodemon index.js",
-    "start": "node index.js"
-  },
   "author": "rainy",
   "license": "ISC",
   "dependencies": {
@@ -17,7 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "develop": "nodemon index.mjs",
-    "start": "node index.mjs"
+    "develop": "nodemon index.js",
+    "start": "node index.js"
   }
 }

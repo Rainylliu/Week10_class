@@ -1,7 +1,8 @@
 // Import the express library and assign it to a variable
-import express from 'express'
-
-const randomDog = require('random.dog.js');
+// const express = require('express');
+// const randomDog = require('random.dog.js');
+import express from 'express';
+import randomDog from 'random.dog.js';
 // Create an instance of an express application 
 const app = express()
 
