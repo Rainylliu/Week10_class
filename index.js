@@ -1,7 +1,7 @@
 // Import the express library and assign it to a variable
 import express from 'express'
-import randomDog from 'random.dog';
 
+const randomDog = require('random.dog.js');
 // Create an instance of an express application 
 const app = express()
 
@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
     const randomDogApi = randomDog.api();
     const dogData = await randomDogApi.getDog();
     const dogImageUrl = dogData.url;
-    
+
     // Send a response with the cat image URL
     res.send(`<img src="${dogImageUrl}" alt="Random Dog Image">`);
   } catch (error) {
