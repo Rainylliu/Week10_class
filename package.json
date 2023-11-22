@@ -13,7 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "develop": "nodemon index.mjs",
-    "start": "node index.mjs"
+    "develop": "nodemon index.js",
+    "start": "node index.js"
   }
 }
